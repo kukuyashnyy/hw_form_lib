@@ -9,20 +9,28 @@
 <form>
     <div class="row">
         <h1>Inputs</h1>
-        <input class="pole" name="Key1" pattern="valid text" placeholder="Enter some text" value=""/>
-        <input class="pole validate" name="Key2" pattern="valid text" placeholder="Enter some text" value="valid text"/>
-        <input class="pole validate" name="Key3" pattern="valid text" placeholder="Enter some text"
-               value="invalid text"/>
+        <div class="pole">
+            <input id="key" name="Key1" pattern="valid text" placeholder="Enter some text" value=""/>
+            <label for="key"></label>
+        </div>
+        <div class="pole validate">
+            <input id="key2" name="Key2" pattern="valid text" placeholder="Enter some text" value="valid text"/>
+            <label for="key2"></label>
+        </div>
+        <div class="pole validate">
+            <input id="key3" name="Key3" pattern="valid text" placeholder="Enter some text" value="invalid text"/>
+            <label for="key3"></label>
+        </div>
     </div>
     <div class="row">
         <h1>Check boxes</h1>
         <label class="checkbox">
             <input type="checkbox" checked/>
-            <div class="checkbox__text">Subscribe</div>
+            <span class="checkbox__text">Subscribe</span>
         </label>
         <label class="checkbox">
             <input type="checkbox"/>
-            <div class="checkbox__text">Subscribe</div>
+            <span class="checkbox__text">Subscribe</span>
         </label>
     </div>
     <div class="row">
